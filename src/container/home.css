@@ -1,0 +1,23 @@
+.rowimg{
+    width: 800px;
+    margin-left: 220px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.zuragnuud{
+    width: 220px;
+    height: 220px;
+    display: block;
+    justify-content:center;
+}
+.zuragnuud img{
+    width: 180px;
+    height: 180px;
+}
+.ontsloh{
+    margin-left: 220px;
+}
+p{
+    margin-top: 0;
+    
+}

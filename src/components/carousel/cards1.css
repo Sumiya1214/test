@@ -1,0 +1,19 @@
+.cards1 img{
+    width: 200px;
+    height: 280px;
+    gap: 15px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+.cards1 p{
+    color: black;
+    font-size: 16px;
+    margin-top: 0;   
+} 
+.ulirliin-ontslog{
+    margin-left: 600px;
+    margin-top: 40px;
+}
+
+
+
