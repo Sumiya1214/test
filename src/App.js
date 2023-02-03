@@ -1,14 +1,56 @@
 import React from 'react';
-import './App.css';
-import About from './container/about';
-// import Home from './container/home';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import About from "./container/about"
 
 function App() {
-  return (
-    <div>
-      {/* <Home/> */}
-      <About/>
-    </div>
-  );
+  return(
+    <BrowserRouter>
+        <Routes>
+          <Route path='/about' element={<About/>}/>
+        </Routes>
+    </BrowserRouter>
+  )
 }
-export default App;
+export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import Home from './container/dashboard/home';
+// import Dashboard from "./container/dashboard/dashboard";
+// import { BrowserRouter,Routes,Route } from 'react-router-dom';
+
+// function App() {
+//   return (
+//     <BrowserRouter>
+//         <Routes>
+//             <Route path="/" element={<Home/>}/>
+//             <Route path="/admin/dashboard" element={<Dashboard/>}/>
+//         </Routes>
+//     </BrowserRouter>
+    
+//   );
+// }
+// export default App;

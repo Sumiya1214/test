@@ -1,5 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
+import "../carousel/cards2.css";
+import testData from "./json";
 
 const Cards2 =()=>{
       const settings = {
@@ -12,23 +14,28 @@ const Cards2 =()=>{
       pauseOnHover: true
       };
     return(
-    <div>
-        <h2>Улирлын онцлох эрэгтэй</h2>
+        <>
+     <div className="cards-2">
+                 <h2>Улирлын онцлох эрэгтэй</h2>
             <Slider {...settings}>
-                <div>
-                    <div className="cards2">
-                        <div className="cards2-img">
-                            <img src = "https://cdnp.cody.mn/spree/images/1125562/product/open-uri20211020-2114564-66c9ex." alt = "/"/>
-                        </div>
-                        <div className="cards2-text">
-                            <p>Малгай</p>
-                            <p>99,000₮</p>
-                        </div>
-                    </div>
-                </div>
-            
+                        {
+                            testData.map((row)=>(
+                            <div className="cards2">
+                                <div className="cards2-img">
+                                    <img src ={row.img} alt = "/"/>
+                                </div>
+                                <div className="cards2-text">
+                                    <p>{row.name}</p>
+                                    <p>{row.une}₮</p>
+                                </div>
+                            </div>
+                            ))
+                        }
             </Slider>
     </div>
+
+        
+        </>
 
     )
 }

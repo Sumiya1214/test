@@ -1,0 +1,19 @@
+
+.irgen-1{
+    width: 200px;
+    height: 400px;
+}
+.irgen-zurag{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+.irgen-zurag img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.irgen{
+    display: grid;
+    grid-template-columns: repeat(1, 4fr);
+}

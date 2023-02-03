@@ -2,7 +2,8 @@ import React from "react";
 import Slider from "react-slick";
 import Cards1 from "../components/carousel/cards1";
 import Cards2 from "../components/carousel/cards2";
-import "./about.css"
+import "./about.css";
+import Cards3 from "../components/carousel/cards3"
 
  const About = () =>{
     const Settings = {
@@ -44,8 +45,11 @@ import "./about.css"
         <div>
             <Cards1/>
             <Cards2/>
+            <Cards3/>
+
         </div>
      </div>
+    
     )
  }
  export default About;

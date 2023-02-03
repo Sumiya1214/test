@@ -12,7 +12,7 @@ import Zurag9 from "../assets/angilal-sport.webp";
 import Zurag10 from "../assets/angilal-tejeewer-amitnii-hangamj.webp";
 
  const Home = () =>{
-    const data= [
+    const data = [
         {
             key:1,
             description:"Хямдрал",
